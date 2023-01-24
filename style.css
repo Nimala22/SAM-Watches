@@ -21,6 +21,10 @@ a{
 }
 
 header{
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  width: 100%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -94,5 +98,96 @@ nav ul li a:hover{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 90vh;
+  height: 100vh;
+}
+/*
+=====================================
+      2.2 services section css 
+=====================================
+*/
+#services{
+  padding: 80px 0;
+  background: #F9F9F9;
+}
+
+.service-tittle h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #2B4F60;
+  text-align: center;
+}
+
+.service-tittle h2 span{
+  color: #E0144C;
+}
+
+.service-tittle p{
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.service-boxes{
+  width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+}
+
+.service-item{
+  padding: 1rem;
+  border: 5px groove #000;
+  transition: .5s;
+}
+
+.service-item:hover{
+  box-shadow: 15px 15px 15px #2B4F60;
+}
+
+.service-item legend i{
+  font-size: 30px;
+  margin: 0 20px;
+  color: #7FA998;
+  transition: .5s;
+}
+
+.service-item:hover legend i{
+  transform: rotate(360deg);
+}
+
+.service-item h3{
+  color: #E0144C;
+  font-size: 25px;
+  text-align: center;
+}
+
+.service-item p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  text-align: justify;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.service-item a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E97878;
+  background: #fff;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 30rem;
+  padding: 5px 12px;
+  box-shadow: 5px 4px 5px #000;
+  transition: .5s;
+}
+
+.service-item a:hover{
+  letter-spacing: 3px;
 }
