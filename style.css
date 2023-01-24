@@ -82,3 +82,17 @@ nav ul li a:hover{
 #click{
   display: none;
 }
+
+/*
+=====================================
+      2.1 hero-area section css 
+=====================================
+*/
+.hero-area{
+  background: url('/images/hero-area-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 90vh;
+}
