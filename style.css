@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-ul{
+ul {
   list-style: none;
 }
- 
-a{
+
+a {
   text-decoration: none;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   z-index: 111;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-header nav{
+header nav {
   display: flex;
-  background: #1D2D50;
+  background: #1d2d50;
   height: 100px;
   width: 100%;
   justify-content: space-between;
@@ -38,52 +37,52 @@ header nav{
   padding: 0px 100px;
 }
 
-nav .logo a{
+nav .logo a {
   font-size: 30px;
   font-weight: 700;
-  color: #FFE1E1;  
+  color: #ffe1e1;
   display: inline-block;
   padding: 5px 12px;
   border-radius: 30rem;
   box-shadow: 5px 5px 5px #000;
 }
 
-nav .logo a span{
-  color: #F8F988;
+nav .logo a span {
+  color: #f8f988;
 }
 
-nav ul{
+nav ul {
   display: flex;
 }
 
-nav ul li a{
+nav ul li a {
   font-size: 22px;
   font-weight: 700;
-  color: #C3F8FF;
+  color: #c3f8ff;
   margin: 0 20px;
   text-transform: capitalize;
   padding: 5px 12px;
   border-radius: 2px 8px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-nav ul li a:hover{
-  box-shadow: 1px 4px 5px #F9F9F9;
+nav ul li a:hover {
+  box-shadow: 1px 4px 5px #f9f9f9;
 }
 
-.menu-btn{
+.menu-btn {
   font-size: 35px;
-  color: #EFEFEF;
-  cursor: pointer;  
-  transition: .5s;
+  color: #efefef;
+  cursor: pointer;
+  transition: 0.5s;
   display: none;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   transform: rotate(360deg);
 }
 
-#click{
+#click {
   display: none;
 }
 
@@ -92,8 +91,8 @@ nav ul li a:hover{
       2.1 hero-area section css 
 =====================================
 */
-.hero-area{
-  background: url('/images/hero-area-bg.jpg');
+.hero-area {
+  background: url("/images/hero-area-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -105,23 +104,23 @@ nav ul li a:hover{
       2.2 services section css 
 =====================================
 */
-#services{
+#services {
   padding: 80px 0;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 
-.service-tittle h2{
+.service-tittle h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #2B4F60;
+  color: #2b4f60;
   text-align: center;
 }
 
-.service-tittle h2 span{
-  color: #E0144C;
+.service-tittle h2 span {
+  color: #e0144c;
 }
 
-.service-tittle p{
+.service-tittle p {
   width: 80%;
   margin: auto;
   font-size: 18px;
@@ -130,43 +129,43 @@ nav ul li a:hover{
   line-height: 1.5;
 }
 
-.service-boxes{
+.service-boxes {
   width: 1200px;
   margin: auto;
-  padding: 50px 0;
+  padding: 30px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 30px;
 }
 
-.service-item{
+.service-item {
   padding: 1rem;
   border: 5px groove #000;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.service-item:hover{
-  box-shadow: 15px 15px 15px #2B4F60;
+.service-item:hover {
+  box-shadow: 15px 15px 15px #2b4f60;
 }
 
-.service-item legend i{
+.service-item legend i {
   font-size: 30px;
   margin: 0 20px;
-  color: #7FA998;
-  transition: .5s;
+  color: #7fa998;
+  transition: 0.5s;
 }
 
-.service-item:hover legend i{
+.service-item:hover legend i {
   transform: rotate(360deg);
 }
 
-.service-item h3{
-  color: #E0144C;
+.service-item h3 {
+  color: #e0144c;
   font-size: 25px;
   text-align: center;
 }
 
-.service-item p{
+.service-item p {
   font-size: 16px;
   font-weight: 400;
   color: #555;
@@ -178,16 +177,93 @@ nav ul li a:hover{
 .service-item a {
   font-size: 20px;
   font-weight: 600;
-  color: #E97878;
+  color: #e97878;
   background: #fff;
   text-align: center;
   border: 2px solid #ddd;
   border-radius: 30rem;
   padding: 5px 12px;
   box-shadow: 5px 4px 5px #000;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.service-item a:hover{
+.service-item a:hover {
+  letter-spacing: 3px;
+}
+/*
+=====================================
+      2.3 smart section css 
+=====================================
+*/
+#smart {
+  padding: 60px 0;
+}
+
+#smart h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #e0144c;
+  text-align: center;
+}
+
+#smart h2 span {
+  color: #2b4f60;
+}
+
+.smart-container {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.smart-container .image {
+  height: 50%;
+  overflow: hidden;
+}
+
+.smart-container .image a img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.smart-container .image a img:hover {
+  transform: scale(1.3);
+}
+
+.smart-container .smart-text {
+  width: 30%;
+}
+
+.smart-text h3{
+  font-size: 30px;
+  font-weight: 600;
+  color: #e0144c;
+}
+
+.smart-text p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.smart-text a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e97878;
+  background: #fff;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 30rem;
+  padding: 5px 12px;
+  box-shadow: 5px 4px 5px #000;
+  transition: 0.5s;
+}
+
+.smart-text a:hover{
   letter-spacing: 3px;
 }
