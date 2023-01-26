@@ -19,6 +19,23 @@ a {
   text-decoration: none;
 }
 
+.site-btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e97878;
+  background: #fff;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 30rem;
+  padding: 5px 12px;
+  box-shadow: 5px 4px 5px #000;
+  transition: 0.5s;
+}
+
+.site-btn:hover {
+  letter-spacing: 3px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -174,22 +191,6 @@ nav ul li a:hover {
   margin: 20px 0;
 }
 
-.service-item a {
-  font-size: 20px;
-  font-weight: 600;
-  color: #e97878;
-  background: #fff;
-  text-align: center;
-  border: 2px solid #ddd;
-  border-radius: 30rem;
-  padding: 5px 12px;
-  box-shadow: 5px 4px 5px #000;
-  transition: 0.5s;
-}
-
-.service-item a:hover {
-  letter-spacing: 3px;
-}
 /*
 =====================================
       2.3 smart section css 
@@ -237,33 +238,115 @@ nav ul li a:hover {
   width: 30%;
 }
 
-.smart-text h3{
+.smart-text h3 {
   font-size: 30px;
   font-weight: 600;
   color: #e0144c;
 }
 
-.smart-text p{
+.smart-text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
   padding: 20px 0;
   text-align: justify;
 }
-
-.smart-text a{
-  font-size: 20px;
-  font-weight: 600;
-  color: #e97878;
-  background: #fff;
-  text-align: center;
-  border: 2px solid #ddd;
-  border-radius: 30rem;
-  padding: 5px 12px;
-  box-shadow: 5px 4px 5px #000;
-  transition: 0.5s;
+/*
+=====================================
+      2.4 gallery section css 
+=====================================
+*/
+#gallery {
+  padding: 80px 0;
+  background: #f8f988;
 }
 
-.smart-text a:hover{
-  letter-spacing: 3px;
+#gallery h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2b4f60;
+  text-align: center;
+}
+
+#gallery h2 span {
+  color: #e0144c;
+}
+
+#gallery p {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.gallery-boxes {
+  background: #f9f9f9;
+  padding: 1rem;
+  box-shadow: 15px 5px 15px #000;
+  width: 1400px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery-boxes .box {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 0;
+  box-shadow: 1px 5px 8px #e97878;
+}
+
+.box .icons a {
+  font-size: 20px;
+  color: #e0144c;
+  margin: 5px 1rem;
+  padding: 0.5rem;
+  border: 2px solid #555;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5;
+  height: 3rem;
+  width: 3rem;
+  box-shadow: 1px 4px 5px #000;
+  transition: .5s;
+}
+
+.box .icons a:hover{
+  color: #1d2d50;
+  border: 2px solid #e0144c;  
+}
+
+.box .image{
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px #000;  
+  margin: 1rem;
+  height: 280px;
+  width: 380px;
+  overflow: hidden;
+}
+
+.box a img {
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+}
+
+.box:hover a img{
+  transform: scale(1.3);
+}
+
+.watches-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.watches-details h5,
+.watches-details span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #06067f;
 }
