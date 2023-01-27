@@ -119,8 +119,27 @@
     padding: 1rem;
     box-shadow: 1px 5px 5px #7fa998;
   }
-  
-    
+
+  /* For review section */
+  .review-boxes{
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+  }
+
+  .review-box{
+    display: block;
+    margin: 40px 0;
+  }
+
+  .review-box .image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .review-box .review-text{
+    width: 100%;
+  }
 
 
 
@@ -206,6 +225,28 @@
     padding: 1rem;
     box-shadow: 1px 5px 5px #7fa998;
   }
+
+  /* For review section */
+  .review-boxes{
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+  }
+
+  .review-box{
+    display: block;
+    margin: 40px 0;
+  }
+
+  .review-box .image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .review-box .review-text{
+    width: 100%;
+  }
+
   
 
   
