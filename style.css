@@ -295,7 +295,7 @@ nav ul li a:hover {
 .gallery-boxes .box {
   text-align: center;
   margin: 1rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   box-shadow: 1px 5px 8px #e97878;
 }
 
@@ -349,4 +349,82 @@ nav ul li a:hover {
   font-size: 18px;
   font-weight: 600;
   color: #06067f;
+}
+/*
+=====================================
+      2.6 parallax section css 
+=====================================
+*/
+#parallax{
+  background: url("images/parallax-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#parallax h3{
+  font-size: 35px;
+  color: #f8f988;
+  font-weight: 700;
+  text-align: center;
+  padding: 150px 0;
+}
+
+/*
+=====================================
+      2.7 slider section css 
+=====================================
+*/
+#slider{
+  background: linear-gradient(to right, #555, #1d2d50);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider-content{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.slider-content span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-content span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.slider-content span:hover img{
+  transform: translateY(-50px) scale(1.3);
 }

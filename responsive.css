@@ -81,7 +81,6 @@
   .gallery-boxes .box {
     width: 80%;
     margin: 10px auto;
-    padding: 1rem 0;
   }
 
   .box .image{
@@ -92,6 +91,25 @@
   .box .image a img{
     height: 100%;
     width: 100%;
+  }
+
+  /* For parallax section */
+  #parallax h3{
+    font-size: 25px;
+    color: #f8f988;
+    font-weight: 700;
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  /* For slider section */
+  #slider{
+    background: linear-gradient(to right, #555, #1d2d50);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   
@@ -143,7 +161,6 @@
   .gallery-boxes .box {
     width: 80%;
     margin: 15px auto;
-    padding: 1rem 0;
   }
 
   .box .image{
@@ -154,6 +171,25 @@
   .box .image a img{
     height: 100%;
     width: 100%;
+  }
+
+  /* For parallax section */
+  #parallax h3{
+    font-size: 25px;
+    color: #f8f988;
+    font-weight: 700;
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  /* For slider section */
+  #slider{
+    background: linear-gradient(to right, #555, #1d2d50);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   
