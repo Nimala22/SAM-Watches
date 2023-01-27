@@ -112,6 +112,13 @@
     overflow: hidden;
   }
 
+  /* For contact section */
+  .contact-form{
+    width: 90%;
+    margin: 80px auto;
+    padding: 1rem;
+    box-shadow: 1px 5px 5px #7fa998;
+  }
   
     
 
@@ -191,6 +198,15 @@
     justify-content: center;
     overflow: hidden;
   }
+
+  /* For contact section */
+  .contact-form{
+    width: 90%;
+    margin: 80px auto;
+    padding: 1rem;
+    box-shadow: 1px 5px 5px #7fa998;
+  }
+  
 
   
 
